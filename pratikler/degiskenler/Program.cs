@@ -79,6 +79,32 @@ namespace degiskenler
 
             string datetime = DateTime.Now.ToString("dd.MM.yyyy"); // 09.02.2021
             string hour = DateTime.Now.ToString("HH:mm"); // 11:13
+
+            // Date Compare
+            Console.WriteLine("######## DATE COMPARE ########");
+
+            DateTime date6 = DateTime.Now;
+            DateTime date7 = new DateTime(2022, 07, 14, 11, 24, 56);
+
+            Console.WriteLine("Date 6: " + date6);
+            Console.WriteLine("Date 7: " + date7);
+
+            int result = date6.CompareTo(date7);
+
+            if (result < 0) {
+                Console.WriteLine("Tarih 6 daha kçüktür.");
+            }  else if (result == 0){
+                Console.WriteLine("Tarihler Eşittir.");
+            }  else {
+                Console.WriteLine("Tarih 6 daha büyüktür.");
+            }      
+            
+
+            // String convert to date time
+            string definedDate = "05/01/2009 06:32:00";
+            Console.WriteLine(Convert.ToDateTime(definedDate));
+
+    
         }
     }
 }
