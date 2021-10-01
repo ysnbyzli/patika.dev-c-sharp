@@ -27,7 +27,7 @@ namespace diziler
 
             // Donguler dizi kullanımı
             // klavyeden girilen n tane sayının ortalamasını hesaplayan program
-
+            /*
             Console.Write("Lütfen dizinin eleman sayısını giriniz: ");
             int arrLength = int.Parse(Console.ReadLine());
 
@@ -46,7 +46,38 @@ namespace diziler
             {
                 Console.Write(value + " ");
             }
+            */
 
+            /* 
+                ^ Metotlar
+            */
+
+            // ^ Sort
+            Console.WriteLine("#### Sort Kullanımı ####");
+            int[] sayiDizisi = { 23, 2, 43, 12, 43, 3, 54, 67 };
+
+            Console.WriteLine("Sırasız Liste");
+            foreach (int sayi in sayiDizisi) Console.Write(sayi + " ");
+
+            Console.WriteLine();
+            Console.WriteLine("Sıralı liste");
+            Array.Sort(sayiDizisi);
+            foreach (int sayi in sayiDizisi) Console.Write(sayi + " ");
+
+            // ^ Clear
+            Console.WriteLine();
+            Array.Clear(sayiDizisi, 2, 2);
+            foreach (int sayi in sayiDizisi) Console.Write(sayi + " ");
+
+            // ^ Reverse
+            Console.WriteLine();
+            Array.Reverse(sayiDizisi);
+            foreach (int sayi in sayiDizisi) Console.Write(sayi + " ");
+
+
+            // ^ IndexOf
+            Console.WriteLine();
+            Array.IndexOf(sayiDizisi, 23);
         }
     }
 }
