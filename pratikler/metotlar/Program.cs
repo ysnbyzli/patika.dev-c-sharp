@@ -23,6 +23,29 @@ namespace metotlar
 
             metotlar.increaseAndCollect(ref a, ref b);
 
+            // out parametreler
+            int outNumber;
+            string number = "999";
+
+            bool result = int.TryParse(number, out outNumber);
+
+            if (result)
+            {
+                Console.Write("Başarılı: ");
+                Console.WriteLine(outNumber);
+            }
+            else
+            {
+                Console.WriteLine("Başarısız");
+            }
+
+            int toplam;
+
+            metotlar.collect(20, 43, out toplam);
+
+            Console.WriteLine("Toplam: " + toplam);
+
+            metotlar.WriteScreen(5);
         }
     }
 
@@ -34,11 +57,20 @@ namespace metotlar
             Console.WriteLine(value);
         }
 
+        public void WriteScreen(int value)
+        {
+            Console.WriteLine(value);
+        }
         public int increaseAndCollect(ref int number1, ref int number2)
         {
             number1++;
             number2++;
             return number1 + number2;
+        }
+
+        public int collect(int a, int b, out int toplam)
+        {
+            return toplam = a + b;
         }
 
     }
