@@ -51,8 +51,8 @@ namespace string_metotlar
             Console.WriteLine(degisken.Split(" ")[1]);
 
             // Substring
-            Console.WriteLine(degisken.Substring(4));
-            Console.WriteLine(degisken.Substring(4, 5));
+            Console.WriteLine(degisken.Substring(4));  // 4. indexten sonra hepsini alır
+            Console.WriteLine(degisken.Substring(4, 5)); // 4. indexten sonra 5 karakter getirir.
         }
     }
 }
