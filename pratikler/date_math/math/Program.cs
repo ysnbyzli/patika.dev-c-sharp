@@ -20,6 +20,15 @@ namespace math
             Console.WriteLine(Math.Min(23, 12));
 
             Console.WriteLine(Math.Pow(3, 4));
+            Console.WriteLine(Math.Sqrt(9));
+            Console.WriteLine(Math.Log(9));
+
+
+            string date = "07:05:45PM";
+
+            Console.WriteLine(DateTime.Parse(date).ToString("HH:mm:ss"));
+
+
         }
     }
 }
